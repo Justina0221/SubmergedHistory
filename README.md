@@ -11,9 +11,20 @@ cultural preservation, and reconciliation.
 ![Alt text](OldMaps/oldagncy.png)
 
 ## Data description
-The Data is downloaded from the USGS site. I am working with LiDAR data and Raster data. 
+The Datasets downloaded from the USGS site. Working with LiDAR data and Raster data. 
+
+**LiDAR data (.laz) **
+Description: High-resolution elevation raster for the region flooded for the Missouri River.
 
 ## Instructions for Workflow
+> For Python and Jupyter setup
+** Setup Python environment **
+
+** Load data **
+
+
 
 
 ## Citations
+USGS LiDAR Data
+Historical Maps 
