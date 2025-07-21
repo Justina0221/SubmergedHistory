@@ -11,47 +11,24 @@ cultural preservation, and reconciliation.
 ![Alt text](OldMaps/oldagncy.png)
 
 ### Data description
-The Datasets downloaded from the USGS site. Working with LiDAR data and Raster data. 
+The datasets are from the USGS site. 
+Working with LiDAR data and Historical maps. 
 
-**LiDAR data (.laz)**
+**LiDAR data (.laz)** 
 Description: High-resolution elevation raster for the region flooded for the Missouri River.
+**Historical Maps** 
+Description: Historical maps from USGS and archives of the Cheyenne River Sioux Tribe
 
-#### Instructions for Workflow
-> For Python and Jupyter setup
+### Project Goals
+Visualize the submerged terrain of the Cheyenne Agency 
+Identify structures using different techniques
+Overlay historical maps to align with LiDAR-derived DEM 
+Preserve Indigenous memory through digital mapping and analysis
 
-
-**Setup Python environment**
-Import all necessary libraries:
-
-`import laspy
-import numpy as np
-import matplotlib.pyplot as plt
-from sklearn.cluster import DBSCAN
-from scipy.interpolate import griddata
-import numpy.ma as ma`
-
-**Load and Combine LiDAR data**
-File paths
-`cheyenne_agency1 = "USGS_LPC_SD_FY17_NRCS_Lidar_QSI_2017_D17_14TLQ396985.laz"
- cheyenne_agency2 = "USGS_LPC_SD_FY17_NRCS_Lidar_QSI_2017_D17_14TLQ397986.laz"
- cheyenne_agency3 = "USGS_LPC_SD_FY17_NRCS_Lidar_QSI_2017_D17_14TLQ397985.laz"
- cheyenne_agency4 = "USGS_LPC_SD_FY17_NRCS_Lidar_QSI_2017_D17_14TLQ396986.laz"`
-
-Read files one at a time
-`las1 = laspy.read(cheyenne_agency1)
-las2 = laspy.read(cheyenne_agency2)
-las3 = laspy.read(cheyenne_agency3)
-las4 = laspy.read(cheyenne_agency4)`
-
-Combine x, y, z coordinates
-`x = np.concatenate([las1.x, las2.x, las3.x, las4.x])
-y = np.concatenate([las1.y, las2.y, las3.y, las4.y])
-z = np.concatenate([las1.z, las2.z, las3.z, las4.z])`
-
-`print(f"Loaded {len(x)} total points from both tiles")`
-
+### Instructions for the Workflow
+> Workflow notebook in the Notebooks folder
 
 
 ##### Citations
-USGS LiDAR Data
-Historical Maps 
+USGS LiDAR Data (https://apps.nationalmap.gov/lidar-explorer/#/)
+Historical Maps from the Cheyenne River Sioux Tribe
