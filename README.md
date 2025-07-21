@@ -10,25 +10,25 @@ cultural preservation, and reconciliation.
 
 ![Alt text](OldMaps/oldagncy.png)
 
-### Data description
+## Data description
 The datasets are from the USGS site. 
 Working with LiDAR data and Historical maps. 
 
-**LiDAR data (.laz)** 
+**LiDAR data (.laz)** : 
 Description: High-resolution elevation raster for the region flooded for the Missouri River.
-**Historical Maps** 
+**Historical Maps** : 
 Description: Historical maps from USGS and archives of the Cheyenne River Sioux Tribe
 
-### Project Goals
+## Project Goals
 Visualize the submerged terrain of the Cheyenne Agency 
 Identify structures using different techniques
 Overlay historical maps to align with LiDAR-derived DEM 
 Preserve Indigenous memory through digital mapping and analysis
 
-### Instructions for the Workflow
+## Instructions for the Workflow
 > Workflow notebook in the Notebooks folder
 
 
-##### Citations
+## Citations
 USGS LiDAR Data (https://apps.nationalmap.gov/lidar-explorer/#/)
 Historical Maps from the Cheyenne River Sioux Tribe
